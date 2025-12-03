@@ -1,4 +1,4 @@
-'''def uoc(x):
+def uoc(x):
     t=[]
     for i in range(1,int(x**0.5)+1):
         if x%i==0:
@@ -16,7 +16,4 @@ for i in g:
         d+=1
 f1.write(str(d))
 f.close()
-f1.close()'''
-print(len(str(2*10**9)))
-for i in range(1,50):
-    print(len(str(2**i)))
+f1.close()
