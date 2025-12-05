@@ -7,6 +7,7 @@ lt2=[]
 t=0
 i=1
 m=max(a)+10
+'''lt2 chứa lũy thừa của 2 hay x=2*i (i<2*(max(a)))'''
 while t<2*m:
     t=2**i
     i+=1
@@ -21,9 +22,13 @@ for i in a:
         if need in past_on and need >0:
             for g in range(past_on[need]):
                 l.append((i,need))
+                '''l chứa cập đủ điều kiện (i,need)'''
+                '''gọi lùi ,gọi từ dưới lên đầu ''''''giảm thời gian ,giảm giảm độ phức tạp'''
                 dem+=1
     if i not in past_on:
         past_on[i]=1
+        '''nếu chưa có thì lưu vào'''
+    
     else:past_on[i]+=1
 
 f1.write(str(dem))
@@ -41,5 +46,6 @@ else:
 #kiểm tra phải luỹ thừa của 2 ko
 f.close()
 f1.close()
+
 
     
