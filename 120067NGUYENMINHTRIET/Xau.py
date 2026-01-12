@@ -1,0 +1,7 @@
+f=open("SAPXAU.INP")
+f1=open("SAPXAU.OUT","w")
+a=list(map(str,f.readline().split()))
+s=sorted(a,key=lambda x:(len(x),x))
+f1.write(str(' '.join(s)))
+f.close()
+f1.close()
